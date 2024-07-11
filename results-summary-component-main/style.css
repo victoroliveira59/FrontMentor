@@ -1,0 +1,128 @@
+/* Importação da fonte Hanken Grotesk */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.result-summary {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.your-result {
+    background: linear-gradient(to top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.your-result h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.your-result>p{
+  margin: 10px;
+}
+
+.score-circle {
+  background: linear-gradient(to top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+
+.score {
+    text-align: center;
+}
+
+.main-score {
+    display: block;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.sub-score {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -10px;
+    opacity: 0.5;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.summary {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.summary h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.summary li {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.reaction { background-color: hsla(0, 100%, 67%, 0.1); }
+.memory { background-color: hsla(39, 100%, 56%, 0.1); }
+.verbal { background-color: hsla(234, 85%, 45%, 0.1); }
+.visual { background-color: hsla(166, 100%, 37%, 0.1); }
+
+.continue {
+    background-color: hsl(234, 85%, 45%);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 40px;
+}
+
+.continue:hover {
+    background-color: hsl(234, 85%, 55%);
+}
