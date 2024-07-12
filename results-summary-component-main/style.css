@@ -8,12 +8,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 1440px;
 }
 
 .container {
     background-color: white;
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     max-width: 800px;
@@ -25,15 +25,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 500px;
 }
 
 .your-result {
-    background: linear-gradient(to top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background: linear-gradient(to top,hsl(241, 81%, 54% ),hsl(252, 100%, 67% ));
     color: white;
     flex: 1;
     padding: 10px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 30px;
+    
 }
 
 .your-result h2 {
@@ -41,20 +43,23 @@ body {
     margin-bottom: 20px;
 }
 
-.your-result>p{
-  margin: 10px;
+.your-result .description{
+  margin-left: 75px;
+}
+.your-result p{
+    margin: 15px;
 }
 
 .score-circle {
-  background: linear-gradient(to top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background: linear-gradient(to top, hsla(241, 72%, 46%, 0),hsla(256, 72%, 46%, 1 ));
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 20px;
-  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 25%;
+  margin-bottom: 20px;
 }
 
 
@@ -66,6 +71,7 @@ body {
     display: block;
     font-size: 48px;
     font-weight: 800;
+    font-size: 70px;
 }
 
 .sub-score {
@@ -78,11 +84,14 @@ body {
 
 .description {
     font-size: 16px;
+    width: 220px;
+    height: 25px;
+    margin: 50px;
 }
 
 .summary {
     flex: 1;
-    padding: 40px;
+    padding: 10px;
     text-align: center;
     border-radius: 20px;
 }
@@ -90,6 +99,7 @@ body {
 .summary h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .summary ul {
@@ -102,16 +112,76 @@ body {
     background-color: hsl(0, 0%, 95%);
     border-radius: 10px;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 10px;
-    padding: 20px;
+    padding:  5px 10px;
     font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    min-width: 200px;
+    margin: 15px;
 }
 
-.reaction { background-color: hsla(0, 100%, 67%, 0.1); }
-.memory { background-color: hsla(39, 100%, 56%, 0.1); }
-.verbal { background-color: hsla(234, 85%, 45%, 0.1); }
-.visual { background-color: hsla(166, 100%, 37%, 0.1); }
+.score-1   {
+    margin: 0 1% 0 50%; /* Remove a margem direita e adiciona margem esquerda */
+    font-weight: bold;
+    display: flex;
+    align-items: flex-start;
+   
+  }
+
+  .total-1{
+    margin:  0 0 0 3px;
+    font-weight: bold;
+  }
+
+  img{
+    margin-left: 10px;
+  }
+
+
+ .summary .reaction { background-color: hsl(0, 44%, 92%);}
+#reaction{  color: hsl(0, 100%, 67%);
+            font-weight: bold;
+            min-width: 65px;
+            min-height: 05px;
+}
+.summary .memory { background-color: hsl(40, 44%, 92%);}
+#memory {   color: hsl(39, 100%, 56%);
+            margin:  15px 0;
+            min-width: 65px;
+            font-weight: bold;
+            min-width: 70px;
+            min-height: 05px;
+}
+
+.summary .verbal { background-color: hsl(166, 44%, 92%); }
+#verbal {   color: hsl(166, 100%, 37%);
+            font-weight: bold;
+            min-width: 70px;
+            min-height: 05px;
+}
+
+.summary .visual { background-color: hsl(234, 44%, 92%); }
+#visual {   color: hsl(234, 85%, 45%);
+            font-weight: bold;
+            min-width: 70px;
+            min-height: 05px;
+            
+}
+  
+.score-1 {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .total-1 {
+    font-size: 16px;
+    color: #999;
+  }
+  
 
 .continue {
     background-color: hsl(234, 85%, 45%);
@@ -120,9 +190,10 @@ body {
     color: white;
     cursor: pointer;
     font-size: 18px;
-    padding: 15px 40px;
+    padding: 15px 100px;
+    margin-top: 20px;
 }
 
 .continue:hover {
-    background-color: hsl(234, 85%, 55%);
+    background-color: hsl(234, 52%, 20%);
 }
